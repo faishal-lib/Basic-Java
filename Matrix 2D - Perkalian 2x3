@@ -11,7 +11,7 @@ Hasil Perkalian (Matrix C)
 29 16 22
 
 
-Code :
+Java Code :
 
 public class DemoMultiplyMatrix {
     public static void main(String[] args) {
