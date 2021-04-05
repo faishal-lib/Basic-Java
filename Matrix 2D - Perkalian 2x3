@@ -14,30 +14,30 @@ FlowChart : https://drive.google.com/file/d/13mOW_y5tAC-ozhd1BpaEogHyjfwYfesL/vi
 
 Java Code :
 
-public class DemoMultiplyMatrix {
+public class Matrix2D {
     public static void main(String[] args) {
         
-        int [][] a = new int [][] {{4,7,4},{2,5,2},{7,4,3}};
-        int [][] b = new int [][] {{2,3,1,2},{5,2,4,1},{2,6,5,2}};
+        int [][] a = new int [][] {{4,7},{2,5}};
+        int [][] b = new int [][] {{2,3,1},{5,2,4}};
         System.out.println("Matriks A");
         for (int i = 0; i < 2; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(a[i][j]+" ");
+            for (int j = 0; j < 2; j++) {
+                System.out.print(a[i][j]+" ");  
             }
             System.out.println("");
         }
         System.out.println("Matriks B");
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 4; j++) {
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
                 System.out.print(b[i][j]+" ");
             }
             System.out.println("");
         }
-        int[][] c = new int[3][4];
+        int[][] c = new int[2][3];
         System.out.println("Hasil Perkalian Matriks A * Matriks B");
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 4; j++) {
-                for (int k = 0; k < 3; k++) {
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k < 2; k++) {
                     c [i][j] += a[i][k]* b[k][j];
                 }
                 System.out.print(c[i][j]+" ");
